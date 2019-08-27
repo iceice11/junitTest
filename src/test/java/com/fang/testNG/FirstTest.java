@@ -11,7 +11,7 @@ public class FirstTest {
   @Test
   public void f() {
 	  new App();
-	  Assert.assertEquals(App.add(1, 2), 2);
+	  Assert.assertEquals(App.add(1, 2), 3);
 	  Assert.assertEquals(App.add(2, 2), 4);
 	  Assert.assertEquals(App.add(1, 3), 4);
   }
