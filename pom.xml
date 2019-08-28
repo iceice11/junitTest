@@ -76,6 +76,17 @@
                     <locales>zh_CN</locales>
                 </configuration>
             </plugin>
+		
+		<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <linkXRef>false</linkXRef>
+                    <consoleOutput>false</consoleOutput>
+                    <outputFileFormat>xml</outputFileFormat>
+                </configuration>
+            </plugin>
         </plugins>
 	</build>
 	
@@ -98,6 +109,12 @@
                       <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
                       </configuration>
                </plugin>
+	    
+	    <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-checkstyle-plugin</artifactId>
+                  <version>2.17</version>
+                </plugin>
     </plugins>
   </reporting>
 </project>
